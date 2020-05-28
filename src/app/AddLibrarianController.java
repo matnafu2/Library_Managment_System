@@ -50,8 +50,8 @@ public class AddLibrarianController {
     	Alert alert = new Alert(Alert.AlertType.CONFIRMATION, "Librarian Added successfully");
     	
    
-    	alert.showAndWait();
-    	
+    	alert.show();
+        System.out.println("now i added a librarian ");
     	
     }
 
