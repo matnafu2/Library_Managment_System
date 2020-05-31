@@ -17,50 +17,51 @@ import java.util.ResourceBundle;
 public class LibrarianViewController implements Initializable {
 
     @FXML
-    private TableView<Librarian> tableView;
+    private TableView<LibrarianViewManager> tableView;
 
     @FXML
-    private TableColumn<Librarian, Integer> Id;
+    private TableColumn<LibrarianViewManager, Integer> Id;
 
     @FXML
-    private TableColumn<Librarian, String> name;
+    private TableColumn<LibrarianViewManager, String> name;
 
     @FXML
-    private TableColumn<Librarian, String> password;
+    private TableColumn<LibrarianViewManager, String> password;
 
     @FXML
-    private TableColumn<Librarian, String> email;
+    private TableColumn<LibrarianViewManager, String> email;
 
     @FXML
-    private TableColumn<Librarian, String> address;
+    private TableColumn<LibrarianViewManager, String> address;
 
     @FXML
-    private TableColumn<Librarian, String> city;
+    private TableColumn<LibrarianViewManager, String> city;
 
     @FXML
-    private TableColumn<Librarian, String> contact;
+    private TableColumn<LibrarianViewManager, String> contact;
 
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
-        Id.setCellValueFactory(new PropertyValueFactory<Librarian, Integer>("Id"));
-        name.setCellValueFactory(new PropertyValueFactory<Librarian, String>("name"));
-        password.setCellValueFactory(new PropertyValueFactory<Librarian, String>("password"));
-        email.setCellValueFactory(new PropertyValueFactory<Librarian, String>("email"));
-        address.setCellValueFactory(new PropertyValueFactory<Librarian, String>("address"));
-        city.setCellValueFactory(new PropertyValueFactory<Librarian, String>("city"));
-        contact.setCellValueFactory(new PropertyValueFactory<Librarian, String>("contact"));
+        Id.setCellValueFactory(new PropertyValueFactory<LibrarianViewManager, Integer>("Id"));
+        name.setCellValueFactory(new PropertyValueFactory<LibrarianViewManager, String>("name"));
+        password.setCellValueFactory(new PropertyValueFactory<LibrarianViewManager, String>("password"));
+        email.setCellValueFactory(new PropertyValueFactory<LibrarianViewManager, String>("email"));
+        address.setCellValueFactory(new PropertyValueFactory<LibrarianViewManager, String>("address"));
+        city.setCellValueFactory(new PropertyValueFactory<LibrarianViewManager, String>("city"));
+        contact.setCellValueFactory(new PropertyValueFactory<LibrarianViewManager, String>("contact"));
 
         tableView.setItems(getLibrarian());
     }
 
-    public ObservableList<Librarian> getLibrarian(){
-        ObservableList<Librarian> libList =  FXCollections.observableArrayList();
+    ObservableList<LibrarianViewManager> libList;
+
+    public ObservableList<LibrarianViewManager> getLibrarian() {
+        libList = FXCollections.observableArrayList();
         ArrayList<Librarian> lib = FileLoader.loadLibrarianFromFile();
-        for(Librarian librarian : lib)
-            libList.add(librarian);
+        for (Librarian l : lib) {
+            libList.add(new LibrarianViewManager(l.getId(), l.getFirstName(), l.getLastName(), l.getEmail(), l.getAddress(), l.getCity(), l.getContactNum()));
+        }
         return libList;
-
-
     }
 }

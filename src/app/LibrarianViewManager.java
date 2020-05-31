@@ -3,7 +3,7 @@ package app;
 import javafx.beans.property.SimpleIntegerProperty;
 import javafx.beans.property.SimpleStringProperty;
 
-public class LibrarianTest {
+public class LibrarianViewManager{
     private SimpleIntegerProperty id;
     private SimpleStringProperty name;
     private SimpleStringProperty password;
@@ -12,7 +12,7 @@ public class LibrarianTest {
     private SimpleStringProperty city;
     private SimpleStringProperty contact;
 
-    public LibrarianTest(Integer id, String name, String password, String email, String address, String city, String contact) {
+    public LibrarianViewManager(Integer id, String name, String password, String email, String address, String city, String contact) {
         this.id = new SimpleIntegerProperty(id);
         this.name = new SimpleStringProperty(name);
         this.password = new SimpleStringProperty(password);
@@ -94,7 +94,7 @@ public class LibrarianTest {
         this.city.set(city);
     }
 
-    public String getContact() {
+    public String getContactNum() {
         return contact.get();
     }
 
