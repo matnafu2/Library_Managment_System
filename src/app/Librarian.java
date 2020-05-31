@@ -1,7 +1,10 @@
 package app;
 
 
-public class Librarian {
+import java.io.Serializable;
+import java.util.Map;
+
+public class Librarian implements Serializable {
 
 	private String firstName;
 	private String lastName;
@@ -9,10 +12,11 @@ public class Librarian {
 	private String address;
 	private String city;
 	private String contactNum;
+	private Map<String, Librarian> librarian;
 	/**
 <<<<<<< HEAD:src/app/Librarian.java
 	 * Construct a librarian using the specified field
-	 * 
+	 *
 	 * @param name       name of the librarian
 	 * @param password   librarian password
 	 * @param email      librarian email
@@ -30,13 +34,13 @@ public class Librarian {
 >>>>>>> master:src/Librarian.java
 	 */
 	public Librarian(String firstName, String lastName, String email, String address, String city, String contactNum) {
-		super();
 		this.firstName = firstName;
 		this.lastName = lastName;
 		this.email = email;
 		this.address = address;
 		this.city = city;
 		this.contactNum = contactNum;
+		//librarian.put(contactNum, new Librarian(firstName, lastName,email,address,city,contactNum));
 	}
 	/**
 	 * @return the firstName
@@ -110,12 +114,12 @@ public class Librarian {
 	public void setContactNum(String contactNum) {
 		this.contactNum = contactNum;
 	}
-	
+
 	@Override
 	public String toString() {
 		return "[firstName=" + firstName + ", lastName=" + lastName + ", email=" + email + ", address="
 				+ address + ", city=" + city + ", contactNum=" + contactNum + "]";
 	}
 
-	
+
 }

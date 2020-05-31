@@ -1,5 +1,7 @@
 package app;
+import java.io.FileOutputStream;
 import java.io.IOException;
+import java.io.ObjectOutputStream;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
@@ -41,10 +43,9 @@ public class LibrarianRemoveController {
     }
 
     @FXML
-    void delete(ActionEvent event)  {
+    void delete(ActionEvent event) throws Exception {
     	Alert alert = new Alert(Alert.AlertType.CONFIRMATION, "Record deleted successfully");
-    	
-        
+
     	alert.showAndWait();
     	
     }

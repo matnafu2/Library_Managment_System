@@ -6,6 +6,10 @@ import javafx.scene.control.Button;
 import javafx.scene.control.TextField;
 import javafx.scene.layout.AnchorPane;
 
+import java.io.FileOutputStream;
+import java.io.ObjectOutputStream;
+import java.io.OutputStream;
+
 public class IssueBookController {
 
     @FXML
@@ -35,7 +39,7 @@ public class IssueBookController {
     }
 
     @FXML
-    void issueBook(ActionEvent event) {
+    void issueBook(ActionEvent event) throws Exception {
 
     }
 
