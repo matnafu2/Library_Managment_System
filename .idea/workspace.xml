@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="02878dd0-b238-411e-bf9e-f5feaf19cef8" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Librarian.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Librarian.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,7 +28,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../Java project" />
     <property name="project.structure.last.edited" value="Global Libraries" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
@@ -121,7 +120,19 @@
       <option name="presentableId" value="Default" />
       <updated>1590520912684</updated>
     </task>
+    <task id="LOCAL-00001" summary="Added edit functionality in the view librarian section">
+      <created>1590978921995</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1590978921995</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Added edit functionality in the view librarian section" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added edit functionality in the view librarian section" />
   </component>
   <component name="WindowStateProjectService">
     <state x="390" y="143" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1590778735363">
@@ -132,30 +143,34 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="447" y="47" key="#com.intellij.ide.util.MemberChooser/0.0.1280.680@0.0.1280.680" timestamp="1590901666698" />
+    <state x="199" y="0" key="CommitChangelistDialog2" timestamp="1590978921111">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="199" y="0" key="CommitChangelistDialog2/0.0.1280.680@0.0.1280.680" timestamp="1590978921111" />
     <state x="94" y="94" width="1092" height="492" key="DiffContextDialog" timestamp="1590725336973">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="94" y="94" width="1092" height="492" key="DiffContextDialog/0.0.1280.680@0.0.1280.680" timestamp="1590725336973" />
-    <state x="421" y="82" key="FileChooserDialogImpl" timestamp="1590815083978">
+    <state x="421" y="82" key="FileChooserDialogImpl" timestamp="1591036088703">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="421" y="82" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1590815083978" />
-    <state width="1224" height="195" key="GridCell.Tab.0.bottom" timestamp="1590978218124">
+    <state x="421" y="82" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1591036088703" />
+    <state width="1224" height="195" key="GridCell.Tab.0.bottom" timestamp="1590978992429">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1224" height="195" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1590978218124" />
-    <state width="1224" height="195" key="GridCell.Tab.0.center" timestamp="1590978218123">
+    <state width="1224" height="195" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1590978992429" />
+    <state width="1224" height="195" key="GridCell.Tab.0.center" timestamp="1590978992429">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1224" height="195" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1590978218123" />
-    <state width="1224" height="195" key="GridCell.Tab.0.left" timestamp="1590978218123">
+    <state width="1224" height="195" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1590978992429" />
+    <state width="1224" height="195" key="GridCell.Tab.0.left" timestamp="1590978992429">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1224" height="195" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1590978218123" />
-    <state width="1224" height="195" key="GridCell.Tab.0.right" timestamp="1590978218124">
+    <state width="1224" height="195" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1590978992429" />
+    <state width="1224" height="195" key="GridCell.Tab.0.right" timestamp="1590978992429">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1224" height="195" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1590978218124" />
+    <state width="1224" height="195" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1590978992429" />
     <state x="122" y="0" key="SettingsEditor" timestamp="1590520952918">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
@@ -164,10 +179,10 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="322" y="75" key="VcsDiffUtil.ChangesDialog/0.0.1280.680@0.0.1280.680" timestamp="1590978730749" />
-    <state x="63" y="0" key="new project wizard" timestamp="1590780523997">
+    <state x="63" y="0" key="new project wizard" timestamp="1591036071348">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="63" y="0" key="new project wizard/0.0.1280.680@0.0.1280.680" timestamp="1590780523997" />
+    <state x="63" y="0" key="new project wizard/0.0.1280.680@0.0.1280.680" timestamp="1591036071348" />
     <state x="298" y="153" key="run.anything.popup" timestamp="1590811910229">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
