@@ -43,8 +43,6 @@ public class Librarian implements Serializable {
         this.address = address;
         this.city = city;
         this.contactNum = contactNum;
-        this.id = count++;
-        System.out.println(count);
     }
 
     public int getId() {

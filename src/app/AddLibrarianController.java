@@ -48,7 +48,7 @@ public class AddLibrarianController {
     private Librarian librarian; // reference to a librarian object
     ArrayList<Librarian> listOfLib = new ArrayList<>();
     ArrayList<Librarian> libList = new ArrayList<>();
-
+    Random rand = new Random();
 
     /**
      * add method adds a librarian onto a file
@@ -77,10 +77,9 @@ public class AddLibrarianController {
             alert.setHeaderText(null);
             alert.setContentText("You have to fill all text fields");
             alert.show();
-//            if(librarian.getId() > 1){
-//                librarian.setID((librarian.getId()) - 1);
-//            }
         } else {
+            int id = rand.nextInt(100) + 1;
+            librarian.setID(id);
             FileOutputStream filename = new FileOutputStream("Librarian.txt");
             ObjectOutputStream libObj = new ObjectOutputStream(filename);
             if (listOfLib.isEmpty()) {

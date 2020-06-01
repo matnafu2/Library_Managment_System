@@ -3,14 +3,12 @@
   <component name="ChangeListManager">
     <list default="true" id="02878dd0-b238-411e-bf9e-f5feaf19cef8" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Librarian.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Librarian.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Librarian.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/AddLibrarianController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/AddLibrarianController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/FileLoader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/FileLoader.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/Librarian.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/Librarian.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/LibrarianRemoveController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/LibrarianRemoveController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/LibrarianTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/LibrarianViewManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/LibrarianView.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/LibrarianView.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/LibrarianViewController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/LibrarianViewController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/Test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/LibrarianViewManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/LibrarianViewManager.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -147,22 +145,22 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="421" y="82" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1590815083978" />
-    <state width="1224" height="150" key="GridCell.Tab.0.bottom" timestamp="1590909780685">
+    <state width="1224" height="195" key="GridCell.Tab.0.bottom" timestamp="1590975368099">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1224" height="150" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1590909780685" />
-    <state width="1224" height="150" key="GridCell.Tab.0.center" timestamp="1590909780683">
+    <state width="1224" height="195" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1590975368099" />
+    <state width="1224" height="195" key="GridCell.Tab.0.center" timestamp="1590975368099">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1224" height="150" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1590909780683" />
-    <state width="1224" height="150" key="GridCell.Tab.0.left" timestamp="1590909780679">
+    <state width="1224" height="195" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1590975368099" />
+    <state width="1224" height="195" key="GridCell.Tab.0.left" timestamp="1590975368098">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1224" height="150" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1590909780679" />
-    <state width="1224" height="150" key="GridCell.Tab.0.right" timestamp="1590909780685">
+    <state width="1224" height="195" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1590975368098" />
+    <state width="1224" height="195" key="GridCell.Tab.0.right" timestamp="1590975368099">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1224" height="150" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1590909780685" />
+    <state width="1224" height="195" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1590975368099" />
     <state x="122" y="0" key="SettingsEditor" timestamp="1590520952918">
       <screen x="0" y="0" width="1280" height="680" />
     </state>

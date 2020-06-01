@@ -16,7 +16,7 @@ public class LibrarianViewManager{
         this.id = new SimpleIntegerProperty(id);
         this.name = new SimpleStringProperty(name);
         this.password = new SimpleStringProperty(password);
-        this.email = new SimpleStringProperty(city);
+        this.email = new SimpleStringProperty(email);
         this.address = new SimpleStringProperty(address);
         this.city = new SimpleStringProperty(city);
         this.contact = new SimpleStringProperty(contact);
