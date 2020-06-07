@@ -46,7 +46,6 @@ public class LibrarianLoginFormController {
 		String password_ = password.getText();
 		boolean found = false;
 		if (employeeList.isEmpty()) {
-			System.out.println("Alert");
 			Alert alert = new Alert(Alert.AlertType.ERROR, "The librarian database is empty");
 			alert.showAndWait();
 		} else if (!employeeList.isEmpty()) {

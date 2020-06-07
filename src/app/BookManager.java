@@ -3,6 +3,9 @@ package app;
 import javafx.beans.property.SimpleIntegerProperty;
 import javafx.beans.property.SimpleStringProperty;
 
+import java.text.SimpleDateFormat;
+import java.time.LocalDate;
+
 public class BookManager {
     private SimpleIntegerProperty id;
     private SimpleStringProperty callno;
@@ -11,14 +14,30 @@ public class BookManager {
     private SimpleStringProperty Publisher;
     private SimpleIntegerProperty quantity;
     private SimpleIntegerProperty issued;
+    private SimpleStringProperty date;
 
-    public BookManager(int id, String callno, String name, String Author, String publisher, int quantity) {
+    public BookManager(int id, String callno, String name, String Author, String publisher, int quantity, int issued) {
         this.id = new SimpleIntegerProperty(id);
         this.callno = new SimpleStringProperty(callno);
         this.name = new SimpleStringProperty(name);
         this.Author = new SimpleStringProperty(Author);
         Publisher = new SimpleStringProperty(publisher);
         this.quantity = new SimpleIntegerProperty(quantity);
+        this.issued = new SimpleIntegerProperty(issued);
+        date = new SimpleStringProperty(LocalDate.now().toString());
+
+    }
+
+    public SimpleIntegerProperty quantityProperty() {
+        return quantity;
+    }
+
+    public String getDate() {
+        return date.get();
+    }
+
+    public void setDate(String date) {
+        this.date.set(date);
     }
 
     public int getId() {
@@ -84,10 +103,6 @@ public class BookManager {
     public int getQuantity() {
         return quantity.get();
     }
-
-//    public SimpleStringProperty quantityProperty() {
-//        return quantity;
-//    }
 
     public void setQuantity(int quantity) {
         this.quantity.set(quantity);

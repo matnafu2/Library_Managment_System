@@ -34,8 +34,6 @@ public class MainController {
     @FXML
     void LibrarianLogin(ActionEvent event) throws IOException {
     	File file = new File("app/LibrarianLoginForm.fxml");
-    	System.out.println(file.getPath().isEmpty());
-    	System.out.println(file.exists()+"does it?");
     	
     	Parent root = FXMLLoader.load(getClass().getResource("LibrarianLoginForm.fxml"));
     	

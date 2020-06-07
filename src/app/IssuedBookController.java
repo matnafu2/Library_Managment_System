@@ -3,13 +3,20 @@ package app;
 import javafx.beans.property.SimpleIntegerProperty;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
+import javafx.scene.control.Button;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.layout.AnchorPane;
+import javafx.stage.Stage;
 
+import java.io.IOException;
 import java.net.URL;
 import java.util.ArrayList;
 import java.util.Map;
@@ -42,6 +49,9 @@ public class IssuedBookController implements Initializable {
         @FXML
         private TableColumn<IssuedBook, String> data;
 
+        @FXML
+        private Button backButton;
+
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle)  {
             Id.setCellValueFactory(new PropertyValueFactory<IssuedBook, Integer>("Id"));
@@ -57,16 +67,20 @@ public class IssuedBookController implements Initializable {
     public ObservableList<IssuedBook> getIssuedBook() throws Exception{
         issuedBook = FXCollections.observableArrayList();
          Map<Student, ArrayList<Book>> issued = FileLoader.getIssuedBook();
-        System.out.println("This line 63 executed");
          Set<Student> key = issued.keySet();
-
          for(Student s : key){
-
-                 for (int i = 0; i < issued.get(s).size(); i++)
+             for (int i = 0; i < issued.get(s).size(); i++)
                      issuedBook.add(new IssuedBook(1, "call", s.getId(), s.getFirstName(), s.getContactNum(), "6/5/2020" ));
-
          }
-
          return issuedBook;
+    }
+
+    @FXML
+    void Back(ActionEvent event) throws IOException {
+        Parent root = FXMLLoader.load(getClass().getResource("LibrarianSection.fxml"));
+        Scene scene = new Scene(root, 600, 600);
+        Stage stage = (Stage) tableView.getScene().getWindow();
+        stage.setScene(scene);
+
     }
 }

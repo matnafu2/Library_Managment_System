@@ -50,7 +50,7 @@ public class LibrarianSectionController {
     @FXML
     void issuedBooks(ActionEvent event) throws IOException {
     	Parent root = FXMLLoader.load(getClass().getResource("IssuedBooks.fxml"));
-    	Scene scene = new Scene(root,600,600);
+    	Scene scene = new Scene(root,650,600);
     	Stage stage = (Stage) addBookBtn.getScene().getWindow();
     	stage.setScene(scene);
     }
@@ -74,7 +74,7 @@ public class LibrarianSectionController {
     @FXML
     void viewBooks(ActionEvent event) throws IOException {
     	Parent root = FXMLLoader.load(getClass().getResource("ViewBook.fxml"));
-    	Scene scene = new Scene(root,600,600);
+    	Scene scene = new Scene(root,650,600);
     	Stage stage = (Stage) addBookBtn.getScene().getWindow();
     	stage.setScene(scene);
     }

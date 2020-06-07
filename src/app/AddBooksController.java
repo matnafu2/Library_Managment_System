@@ -63,11 +63,22 @@ public class AddBooksController {
 				Book book = new Book(name.getText(), CallNo.getText(),author.getText(),publisher.getText(),q);
 				
 				// get the book data as an array list
-				ArrayList<Book> bookData = getData("src/books.res");
-				
+				ArrayList<Book> bookData = FileLoader.loadBooks("src/books.res");
+
+				boolean found = false;
+				for (Book book2 : bookData) {
+					if(book2.getCallNo().equals(book.getCallNo())) {
+						book2.setQuantity(q+book2.getQuantity());
+					    found = true;
+						break;
+					}
+				}
 				// add the new object into the book data
-				bookData.add(book);
-				
+				// this only happens if book is a new book in the system.
+				if(!found)
+					bookData.add(book);
+
+				//bookData.add(book);
 				// store this arrayList
 				storeData(bookData, "src/books.res");
 				
@@ -88,32 +99,6 @@ public class AddBooksController {
 		Scene scene = new Scene(root, 600, 600);
 		Stage stage = (Stage) pane.getScene().getWindow();
 		stage.setScene(scene);
-	}
-
-	public static void main(String[] args) {
-		System.out.println(getData("src/books.ser"));
-	}
-
-	@SuppressWarnings("unchecked")
-	public static ArrayList<Book> getData(String fileName) {
-		
-		ArrayList<Book> books2 = new ArrayList<>();
-		// FileInputStream fis;
-		try {
-			FileInputStream fis = new FileInputStream("src/books.ser");
-			ObjectInputStream ois = new ObjectInputStream(fis);
-			books2 = (ArrayList<Book>) ois.readObject();				// SuppressWarnings
-			
-			fis.close();
-			ois.close();
-			
-		} catch (IOException | ClassNotFoundException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
-		
-		
-		return books2;
 	}
 
 	public static void storeData(ArrayList<Book> books, String fileName) {

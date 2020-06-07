@@ -86,7 +86,7 @@ public  class FileLoader {
             return new HashMap<>();
         }
         catch (EOFException e){
-            System.out.println("End of file exception is thrown");
+            System.out.println("File loader class: End of file exception is thrown");
             return new HashMap<>();
         }
         return readIssuedBook;

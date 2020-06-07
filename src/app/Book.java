@@ -1,6 +1,7 @@
 package app;
 
 import java.io.Serializable;
+import java.time.LocalDate;
 
 /**
  * Book entity
@@ -14,6 +15,7 @@ public class Book implements Serializable{
 	private String publisher;
 	private int quantity;
 	private int issued;
+	private LocalDate localDate;
 	/**
 	 * @param title
 	 * @param callNo
@@ -22,16 +24,18 @@ public class Book implements Serializable{
 	 * @param quantity
 	 */
 	public Book(String title, String callNo, String author, String publisher, int quantity) {
-		super();
 		this.title = title;
 		this.callNo = callNo;
 		this.author = author;
 		this.publisher = publisher;
 		this.quantity = quantity;
+		localDate = LocalDate.now();
 	}
-	public Book() {
-		// TODO Auto-generated constructor stub
+
+	public LocalDate getLocalDate() {
+		return localDate;
 	}
+
 	/**
 	 * @return the title
 	 */

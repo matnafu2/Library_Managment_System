@@ -7,19 +7,19 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane fx:id="pane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="app.LibrarianLoginFormController">
+<AnchorPane fx:id="pane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="app.LibrarianLoginFormController">
    <children>
       <Label layoutX="93.0" layoutY="117.0" text="Enter Name">
          <font>
             <Font size="16.0" />
          </font>
       </Label>
-      <Label layoutX="93.0" layoutY="155.0" text="Enter Password">
+      <Label layoutX="81.0" layoutY="207.0" text="Enter Password">
          <font>
             <Font size="16.0" />
          </font>
       </Label>
-      <PasswordField fx:id="password" layoutX="235.0" layoutY="154.0" promptText="password">
+      <PasswordField fx:id="password" layoutX="235.0" layoutY="201.0" promptText="password">
          <font>
             <Font size="16.0" />
          </font>
@@ -34,7 +34,7 @@
             <Font size="20.0" />
          </font>
       </Label>
-      <Button layoutX="274.0" layoutY="239.0" mnemonicParsing="false" onAction="#login" text="Login">
+      <Button layoutX="279.0" layoutY="300.0" mnemonicParsing="false" onAction="#login" text="Login">
          <font>
             <Font size="16.0" />
          </font>
