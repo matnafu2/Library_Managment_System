@@ -16,7 +16,7 @@
             <TableColumn id="publisher" fx:id="publisher" prefWidth="75.0" text="Publisher" />
             <TableColumn id="quantity" fx:id="quantity" prefWidth="75.0" text="quantity" />
             <TableColumn id="issued" fx:id="issued" prefWidth="75.0" text="issued" />
-            <TableColumn id="contact" fx:id="date" prefWidth="99.0" text="Issued date" />
+            <TableColumn id="contact" fx:id="date" prefWidth="99.0" text="added date" />
         </columns>
       </TableView>
       <Button fx:id="backButton" layoutX="546.0" layoutY="496.0" mnemonicParsing="false" onAction="#back" prefHeight="39.0" prefWidth="69.0" text="Back" />

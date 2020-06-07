@@ -2,6 +2,7 @@ package app;
 
 import java.io.*;
 import java.lang.reflect.Constructor;
+import java.time.LocalDate;
 import java.util.*;
 
 import javafx.event.ActionEvent;
@@ -98,7 +99,7 @@ public class IssueBookController {
                                     boo.add(b);
                                     borrowedBook.put(student, boo);
                                 }
-
+                                b.setBookIssuedDate(LocalDate.now()); // set the books issued date
                                 obj.writeObject(borrowedBook);
                                 outFile.writeObject(listOfBook);
                                 Alert alert = new Alert(Alert.AlertType.CONFIRMATION, "Book issued Successfully");
@@ -108,6 +109,7 @@ public class IssueBookController {
                                 ArrayList<Book> bo = new ArrayList<>();
                                 bo.add(b);
                                 borrowedBook.put(student, bo);
+                                b.setBookIssuedDate(LocalDate.now()); // set the books issued date
                                 obj.writeObject(borrowedBook);
                                 outFile.writeObject(listOfBook);
                                 Alert alert = new Alert(Alert.AlertType.CONFIRMATION, "Book issued Successfully");
@@ -122,6 +124,7 @@ public class IssueBookController {
                             break;
                         }
                     }
+
                 }
                 if (!found) {
                     Alert alert = new Alert(Alert.AlertType.ERROR, "The book you are looking for is not in stock");

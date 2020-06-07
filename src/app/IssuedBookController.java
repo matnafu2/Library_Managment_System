@@ -70,7 +70,7 @@ public class IssuedBookController implements Initializable {
          Set<Student> key = issued.keySet();
          for(Student s : key){
              for (int i = 0; i < issued.get(s).size(); i++)
-                     issuedBook.add(new IssuedBook(1, "call", s.getId(), s.getFirstName(), s.getContactNum(), "6/5/2020" ));
+                     issuedBook.add(new IssuedBook(1, issued.get(s).get(i).getCallNo(), s.getId(), s.getFirstName() + " " +s.getLastName(), s.getContactNum(), issued.get(s).get(i).getBookIssuedDate()));
          }
          return issuedBook;
     }

@@ -54,7 +54,7 @@ public class ReturnBookController {
         Book book = null; // a book to be removed
         boolean found = false;
         for (Book b : listOfBooks) {
-            if (b.getCallNo().equalsIgnoreCase(BookCallNum.getText())) {
+            if (b.getCallNo().equalsIgnoreCase(BookCallNum.getText()) && b.getIssued() > 0) {
                 found = true;
                 b.addQuantity();
                 b.subIssuedBook();
@@ -82,9 +82,9 @@ public class ReturnBookController {
         obj.close();
 
         // Writing issued Books to a file
-        FileOutputStream issBook = new FileOutputStream("src/books.ser");
+        FileOutputStream issBook = new FileOutputStream("src/IssuedBook.txt");
         ObjectOutputStream outFile = new ObjectOutputStream(issBook);
-        outFile.writeObject(listOfBooks);
+        outFile.writeObject(issuedBook);
         outFile.close();
     }
 }

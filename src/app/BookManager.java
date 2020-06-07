@@ -14,8 +14,7 @@ public class BookManager {
     private SimpleStringProperty Publisher;
     private SimpleIntegerProperty quantity;
     private SimpleIntegerProperty issued;
-    private SimpleStringProperty date;
-
+    private  LocalDate date;
     public BookManager(int id, String callno, String name, String Author, String publisher, int quantity, int issued) {
         this.id = new SimpleIntegerProperty(id);
         this.callno = new SimpleStringProperty(callno);
@@ -24,20 +23,19 @@ public class BookManager {
         Publisher = new SimpleStringProperty(publisher);
         this.quantity = new SimpleIntegerProperty(quantity);
         this.issued = new SimpleIntegerProperty(issued);
-        date = new SimpleStringProperty(LocalDate.now().toString());
-
+        date = LocalDate.now();
     }
 
     public SimpleIntegerProperty quantityProperty() {
         return quantity;
     }
 
-    public String getDate() {
-        return date.get();
+    public LocalDate getDate() {
+        return date;
     }
 
-    public void setDate(String date) {
-        this.date.set(date);
+    public void setDate(LocalDate date) {
+        this.date = date;
     }
 
     public int getId() {

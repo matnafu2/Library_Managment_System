@@ -49,7 +49,7 @@ public class ViewBookController implements Initializable {
     private TableColumn<BookManager, Integer> issued;
 
     @FXML
-    private TableColumn<BookManager, String> date;
+    private TableColumn<BookManager, LocalDate> date;
 
     @FXML
     private Button backButton;
@@ -64,7 +64,7 @@ public class ViewBookController implements Initializable {
         Author.setCellValueFactory(new PropertyValueFactory<BookManager, String>("Author"));
         quantity.setCellValueFactory(new PropertyValueFactory<BookManager, Integer>("quantity"));
         issued.setCellValueFactory(new PropertyValueFactory<BookManager, Integer>("issued"));
-        date.setCellValueFactory(new PropertyValueFactory<BookManager, String>("date"));
+        date.setCellValueFactory(new PropertyValueFactory<BookManager, LocalDate>("date"));
 
         tableView.setItems(getBook());
 

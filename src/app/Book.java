@@ -16,6 +16,7 @@ public class Book implements Serializable{
 	private int quantity;
 	private int issued;
 	private LocalDate localDate;
+	private LocalDate bookIssuedDate;
 	/**
 	 * @param title
 	 * @param callNo
@@ -30,6 +31,18 @@ public class Book implements Serializable{
 		this.publisher = publisher;
 		this.quantity = quantity;
 		localDate = LocalDate.now();
+	}
+
+	public void setLocalDate(LocalDate localDate) {
+		this.localDate = localDate;
+	}
+
+	public LocalDate getBookIssuedDate() {
+		return bookIssuedDate;
+	}
+
+	public void setBookIssuedDate(LocalDate bookIssuedDate) {
+		this.bookIssuedDate = bookIssuedDate;
 	}
 
 	public LocalDate getLocalDate() {

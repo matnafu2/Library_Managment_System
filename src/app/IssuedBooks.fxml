@@ -7,14 +7,14 @@
 
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="app.IssuedBookController">
    <children>
-      <TableView fx:id="tableView" layoutX="26.0" layoutY="26.0" prefHeight="318.0" prefWidth="600.0">
+      <TableView fx:id="tableView" layoutX="10.0" layoutY="22.0" prefHeight="316.0" prefWidth="615.0">
         <columns>
-          <TableColumn id="Id" fx:id="Id" text="Id" />
-          <TableColumn id="bookcallno" fx:id="callNo" prefWidth="100.0" text="bookcallno" />
-            <TableColumn id="studentId" fx:id="studentID" prefWidth="100.0" text="studentId" />
-            <TableColumn id="address" fx:id="studentName" prefWidth="100.0" text="studentName" />
-            <TableColumn id="city" fx:id="studentContact" prefWidth="100.0" text="studentcontact" />
-            <TableColumn id="contact" fx:id="data" prefWidth="119.0" text="issuedDate" />
+          <TableColumn id="Id" fx:id="Id" prefWidth="79.66665649414062" text="Id" />
+          <TableColumn id="bookcallno" fx:id="callNo" minWidth="0.0" prefWidth="101.33334350585938" text="bookcallno" />
+            <TableColumn id="studentId" fx:id="studentID" prefWidth="86.0" text="studentId" />
+            <TableColumn id="address" fx:id="studentName" prefWidth="124.0" text="studentName" />
+            <TableColumn id="city" fx:id="studentContact" prefWidth="112.66668701171875" text="studentcontact" />
+            <TableColumn id="contact" fx:id="data" prefWidth="111.0" text="issued date" />
         </columns>
       </TableView>
       <Button fx:id="backButton" layoutX="561.0" layoutY="457.0" mnemonicParsing="false" onAction="#Back" prefHeight="34.0" prefWidth="58.0" text="Back" />

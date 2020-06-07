@@ -61,7 +61,6 @@ public class LibrarianLoginFormController {
 			}
 		}
 		if (!found) {
-			System.out.println("Alert");
 			Alert alert = new Alert(Alert.AlertType.ERROR, "Username or Password incorrect");
 			alert.showAndWait();
 		}

@@ -4,21 +4,31 @@ import javafx.beans.property.IntegerProperty;
 import javafx.beans.property.SimpleIntegerProperty;
 import javafx.beans.property.SimpleStringProperty;
 
+import java.time.LocalDate;
+
 public class IssuedBook {
     private SimpleIntegerProperty id;
     private SimpleStringProperty bookCallNo;
     private SimpleStringProperty studentId;
     private SimpleStringProperty studentName;
     private SimpleStringProperty studentContact;
-    private SimpleStringProperty issuedDate;
+    private LocalDate issuedDate;
 
-    public IssuedBook(int id, String callNo, String stuId, String stuName, String stuCont, String issuedDate) {
+    public IssuedBook(int id, String callNo, String stuId, String stuName, String stuCont, LocalDate issuedDate) {
         this.id = new SimpleIntegerProperty(id);
         this.bookCallNo = new SimpleStringProperty(callNo);
         this.studentId = new SimpleStringProperty(stuId);
         this.studentName = new SimpleStringProperty(stuName);
         this.studentContact = new SimpleStringProperty(stuCont);
-        this.issuedDate = new SimpleStringProperty(issuedDate);
+        this.issuedDate = issuedDate;
+    }
+
+    public void setIssuedDate(LocalDate issuedDate) {
+        this.issuedDate = issuedDate;
+    }
+
+    public LocalDate getIssuedDate() {
+        return issuedDate;
     }
 
     public int getId() {
@@ -81,15 +91,5 @@ public class IssuedBook {
         this.studentContact.set(studentContact);
     }
 
-    public String getIssuedDate() {
-        return issuedDate.get();
-    }
 
-    public SimpleStringProperty issuedDateProperty() {
-        return issuedDate;
-    }
-
-    public void setIssuedDate(String issuedDate) {
-        this.issuedDate.set(issuedDate);
-    }
 }
